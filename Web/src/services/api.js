@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// API Base URL - thay đổi theo backend của bạn
-const API_BASE_URL = 'http://localhost:5000/api';
+// API Base URL - có thể config qua environment variable
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 // Tạo axios instance
 const api = axios.create({
